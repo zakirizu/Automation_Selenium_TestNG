@@ -43,7 +43,10 @@ public class BaseTest {
 	
 	
 	@AfterMethod
-	public void tearDown() {
+	public void tearDown() throws InterruptedException {
+		//Adding delay to observe the browser before closing and to explain the steps to students. 
+		//In real-time automation scripts, avoid using Thread.sleep(). 
+		Thread.sleep(5000);
 		System.out.println("BaseTest: Tearing down the test environment.");
 		driver.quit();
 	}
