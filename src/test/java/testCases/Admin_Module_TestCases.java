@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class Admin_Module_TestCases extends BaseTest {
 	
 	@Test
-	public void verifyAdminSearchFunctionality() throws InterruptedException {
+	public void Admin_TC01() throws InterruptedException {
 		Login_Page loginPage = new Login_Page(driver);
 		Admin_Module_Page adminPage = new Admin_Module_Page(driver);		
 		loginPage.getUserName().sendKeys("admin");
@@ -20,7 +20,7 @@ public class Admin_Module_TestCases extends BaseTest {
 	
 	
 	@Test
-	public void verifyAdminSearchFunctionality2() throws InterruptedException {
+	public void Admin_TC02() throws InterruptedException {
 		Login_Page loginPage = new Login_Page(driver);
 		Admin_Module_Page adminPage = new Admin_Module_Page(driver);		
 		loginPage.getUserName().sendKeys("admin");

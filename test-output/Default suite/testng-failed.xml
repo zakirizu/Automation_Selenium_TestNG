@@ -7,7 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="TestCaseToValidateErrorMessageForInvalidEmployee"/>
+          <include name="Time_TestCase01"/>
         </methods>
       </class> <!-- testCases.Time_TestCases -->
     </classes>

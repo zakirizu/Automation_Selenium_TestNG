@@ -13,7 +13,7 @@ public class BaseTest {
 	String url = PropertyFileReader.getProperty("qa_url");
 	
 	@BeforeMethod
-	public void setUp() {
+	public void setUp() throws InterruptedException {
 		if(browser.equalsIgnoreCase("chrome")) {
 			// Initialize ChromeDriver
 			System.out.println("BaseTest: Initializing ChromeDriver.");
@@ -36,7 +36,7 @@ public class BaseTest {
 		}
 		driver.manage().window().maximize();
 		driver.get(url);
-		driver.manage().deleteAllCookies();
+		Thread.sleep(5000);
 		driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(30));
 		System.out.println("BaseTest: Setting up the test environment.");
 	}
