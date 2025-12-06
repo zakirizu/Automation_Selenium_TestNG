@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BaseTest {
 	
 	public WebDriver driver;
-	String browser = PropertyFileReader.getProperty("browser");
+	String browser = PropertyFileReader.getProperty("browser");	
 	String url = PropertyFileReader.getProperty("qa_url");
 	
 	@BeforeMethod

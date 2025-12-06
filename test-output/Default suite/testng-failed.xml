@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.Admin_Module_TestCases">
+      <class name="testCases.Time_TestCases">
         <methods>
           <include name="setUp"/>
-          <include name="verifyAdminSearchFunctionality"/>
           <include name="tearDown"/>
+          <include name="TestCaseToValidateErrorMessageForInvalidEmployee"/>
         </methods>
-      </class> <!-- testCases.Admin_Module_TestCases -->
+      </class> <!-- testCases.Time_TestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

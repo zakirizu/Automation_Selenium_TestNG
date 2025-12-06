@@ -5,8 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 public class Login_Page {
 
-	private WebDriver driver;
-	
+	private WebDriver driver;	
 	//Syntax to Create Constructor for the Page Class
 	public Login_Page(WebDriver driver) {
 		this.driver = driver;

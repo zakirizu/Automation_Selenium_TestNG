@@ -10,10 +10,8 @@ public class PropertyFileReader {
 	static FileInputStream fis;
 	static String locationPath;
 	 static String value=null;
-	public static void main(String[] args) throws IOException {		
-		String test = getProperty("highLightElement");
-		System.out.println(test);
-	}
+
+	
 	public static String getProperty(String key) {
 		try {
 			
