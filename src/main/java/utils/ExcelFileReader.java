@@ -7,17 +7,19 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelFileReader {
-	static  String shtName = "TIME";
-	static String tcId = "Time_TestCase01";
-	
 
+	
+/*
 	public static void main(String[] args) throws IOException {
-		HashMap<String,String> data =readDatafromExcelSheet(shtName,tcId );		
+		HashMap<String, String> hmap =	readDatafromExcelSheet("TIME", "Time_TestCase04");
+		
+		//HashMap<String,String> data =readDatafromExcelSheet(shtName,tcId );		
 		//Print the HashMap
-		for (String key : data.keySet()) {
-			System.out.println("Key: " + key + ", Value: " + data.get(key));
+		for (String key : hmap.keySet()) {
+			System.out.println("Key: " + key + ", Value: " + hmap.get(key));
 		}
 }
+*/
 
 	public static HashMap<String,String> readDatafromExcelSheet(String sheetName, String tcID) throws IOException {
 		HashMap<String, String> hmap = null;
