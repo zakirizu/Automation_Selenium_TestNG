@@ -26,6 +26,7 @@ public class ExtentReportManager {
             extent.setSystemInfo("Tester", "Vineela");
             extent.setSystemInfo("Environment", "QA");
             extent.setSystemInfo("Browser", "Chrome");
+            extent.setSystemInfo("System", "Windows");
         }
         return extent;
     }
