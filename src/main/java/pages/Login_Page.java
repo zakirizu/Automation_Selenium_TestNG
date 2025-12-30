@@ -31,6 +31,10 @@ public class Login_Page {
 	public WebElement getloginBtn() {
 		return loginBtn;
 	}
+	public WebElement getlanguageDropDown() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 }

@@ -1,5 +1,8 @@
 package testCases;
 import baseTest.BaseTest;
+import org.openqa.selenium.support.ui.Select;
+
+import pages.CommonMethod;
 import pages.Login_Page;
 import pages.Time_page;
 import utils.ExcelFileReader;
@@ -31,15 +34,26 @@ public class Time_TestCases extends BaseTest {
 	//test
 	
 	@Test
-	public void Time_TestCase02() {
+	public void Time_TestCase02() throws IOException {
+		testData = ExcelFileReader.readDatafromExcelSheet("TIME", "Time_TestCase01");
 		Login_Page 	login = new Login_Page(driver);
 		Time_page 	time = new Time_page(driver);
+		CommonMethod cm = new CommonMethod(driver);
 		
 		login.getpassWord().sendKeys("Admin");
 		login.getpassWord().sendKeys("admin123");
 		login.getloginBtn().click();
 		
+		cm.MoveToElement(time.getTimeBtn());
+
 		
+		
+		
+	/*
+		Select sc = new Select(login.getlanguageDropDown());
+		sc.selectByVisibleText(testData.get("userName"));
+		
+		*/
 	}
 	
 }

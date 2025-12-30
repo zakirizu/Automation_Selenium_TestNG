@@ -42,5 +42,12 @@ public class Time_page {
 	public WebElement getinvalidMsg() {
 		return invalidMsg;
 	}
+	
+	
+	@FindBy(xpath="//span[text()='Invalid']")
+	private WebElement frameOne;
+	public WebElement getFrameOne() {
+		return frameOne;
+	}
 
 }
